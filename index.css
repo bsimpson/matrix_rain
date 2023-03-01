@@ -1,10 +1,14 @@
 .block {
   background-color: black;
   color: white;
-  width: 400px;
-  height: 400px;
+  width: 10em;
+  height: 10em;
   position: relative;
   font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  padding: 1em;
 }
 
 .green-1 {
@@ -30,9 +34,12 @@
 .row {
   size: 1em;
   position: absolute;
-  left: 0;
   top: 0;
-  padding: 20px;
+}
+
+.col {
+  height: 100%;
+  width: 1em;
 }
 
 .row-1 {
@@ -57,6 +64,22 @@
 
 .row-6 {
   top: 5em;
+}
+
+.row-7 {
+  top: 6em;
+}
+
+.row-8 {
+  top: 7em;
+}
+
+.row-9 {
+  top: 8em;
+}
+
+.row-10 {
+  top: 9em;
 }
 
 .block span:last-child {
