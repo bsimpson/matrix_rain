@@ -31,8 +31,7 @@ function render(col) {
     blockEl.prepend(rowEl);
 
     // stop when we run out of rows
-    // TODO randomize length of tail
-    if (blockEl.querySelectorAll('.row').length < ROWS) {
+    if (blockEl.querySelectorAll('.row').length < blockEl.dataset.length) {
       setTimeout(() => { render(col) }, blockEl.dataset.speed);
     }
   // randomize start of rain
@@ -58,9 +57,12 @@ function randomGreen(green) {
 window.onload = () => {
   for(let i = 1; i <= COLS; i++) {
 
-    // randomize column speeds
     document.querySelectorAll('.block .col').forEach(colEl => {
+      // randomize column speeds
       colEl.dataset.speed = Math.ceil(Math.random() * 1000);
+
+      // randomize column lengths
+      colEl.dataset.length = Math.ceil(Math.random() * ROWS);
     });
 
     render(i)
