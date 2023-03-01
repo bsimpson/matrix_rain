@@ -1,0 +1,64 @@
+.block {
+  background-color: black;
+  color: white;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  font-size: 2em;
+}
+
+.green-1 {
+  color: #15803d;
+}
+
+.green-2 {
+  color: #16a34a;
+}
+
+.green-3 {
+  color: #22c55e;
+}
+
+.green-4 {
+  color: #4ade80;
+}
+
+.white {
+  color: #f0fdf4;
+}
+
+.row {
+  size: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.row-1 {
+  top: 0;
+}
+
+.row-2 {
+  top: 1em;
+}
+
+.row-3 {
+  top: 2em;
+}
+
+.row-4 {
+  top: 3em;
+}
+
+.row-5 {
+  top: 4em;
+}
+
+.row-6 {
+  top: 5em;
+}
+
+.block span:last-child {
+  color: #f0fdf4;
+}
