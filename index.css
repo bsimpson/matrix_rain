@@ -11,6 +11,11 @@
   padding: 1em;
 }
 
+span {
+  text-shadow:
+  0 0 9px #0fa;
+}
+
 .green-1 {
   color: #15803d;
 }
