@@ -1,16 +1,17 @@
 body {
   background-color: black;
+  overflow: hidden;
 }
 
 .block {
   color: white;
-  width: 10em;
-  height: 10em;
+  width: 100%;
+  height: 100%;
   position: relative;
   font-size: 2em;
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  gap: .2em;
   padding: 1em;
 }
 
@@ -48,46 +49,6 @@ span {
 .col {
   height: 100%;
   width: 1em;
-}
-
-.row-1 {
-  top: 0;
-}
-
-.row-2 {
-  top: 1em;
-}
-
-.row-3 {
-  top: 2em;
-}
-
-.row-4 {
-  top: 3em;
-}
-
-.row-5 {
-  top: 4em;
-}
-
-.row-6 {
-  top: 5em;
-}
-
-.row-7 {
-  top: 6em;
-}
-
-.row-8 {
-  top: 7em;
-}
-
-.row-9 {
-  top: 8em;
-}
-
-.row-10 {
-  top: 9em;
 }
 
 .block span:last-child {
